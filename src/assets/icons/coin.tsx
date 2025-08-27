@@ -1,0 +1,12 @@
+import { ComponentProps } from "react";
+
+export const IconCoin = (props: ComponentProps<"svg">) => {
+  return (
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" {...props}>
+      <path
+        d="M13.499 13.5H12.001V15H3.00098V13.5H11.999V12H13.499V13.5ZM3 12V13.5H1.5V12H3ZM8.25098 3.75H10.499V5.25H5.99902V6.75098H10.5V11.251H9V11.25H8.25098V12.75H6.75098V11.25H4.49902V9.75H9V8.25098H4.49902V3.75H6.75098V2.25H8.25098V3.75ZM1.5 12.001H0V3.00098H1.5V12.001ZM15 12.001H13.5V3.00098H15V12.001ZM3 3H1.5V1.5H3V3ZM12.001 1.5H13.499V3H11.999V1.5H3.00098V0H12.001V1.5Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};
