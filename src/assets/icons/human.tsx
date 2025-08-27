@@ -1,0 +1,12 @@
+import { ComponentProps } from "react";
+
+export const IconHuman = (props: ComponentProps<"svg">) => {
+  return (
+    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" {...props}>
+      <path
+        d="M12.042 6.37476H10.625V15.5828H9.20801V11.3328H7.79199V15.5828H6.375V6.37476H4.95801V4.95776H12.042V6.37476ZM4.95801 4.95776H3.54199V3.54175H4.95801V4.95776ZM13.458 4.95776H12.042V3.54175H13.458V4.95776ZM9.91699 4.24976H7.08301V1.41675H9.91699V4.24976ZM3.54199 3.54175H2.125V2.12476H3.54199V3.54175ZM14.875 3.54175H13.458V2.12476H14.875V3.54175Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+};

@@ -1,1 +1,10 @@
+export { IconArrow } from "./arrow";
+export { IconBag } from "./bag";
+export { IconBullseyeArrow } from "./bullseye-arrow";
 export { IconBurger } from "./burger";
+export { IconCasinoGames } from "./casino-games";
+export { IconCoin } from "./coin";
+export { IconHuman } from "./human";
+export { IconSearch } from "./search";
+export { IconUserPlus } from "./user-plus";
+export { IconUsers } from "./users";
