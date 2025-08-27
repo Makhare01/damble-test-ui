@@ -11,7 +11,7 @@ export const SearchInput = () => {
   if (isCollapsed) {
     return (
       <div
-        className="flex items-center justify-center h-9 w-9 border bg-background hover:border-[#5832E3] transition-colors cursor-pointer"
+        className="flex items-center justify-center h-9 w-9 border rounded-[1px] bg-background hover:border-[#5832E3] transition-colors cursor-pointer"
         onClick={toggleSidebar}
       >
         <IconSearch className="text-disabled-text" />
@@ -20,7 +20,7 @@ export const SearchInput = () => {
   }
 
   return (
-    <div className="flex items-center h-[50px] border bg-background px-[18px] py-[13px] gap-1 focus-within:border-[#5832E3] transition-colors">
+    <div className="flex items-center h-[50px] border rounded-[1px] bg-background px-[18px] py-[13px] gap-1 focus-within:border-[#5832E3] transition-colors">
       <IconSearch className="text-disabled-text" />
       <Input
         className="border-none h-full w-full rounded-none ring-0"

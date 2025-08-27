@@ -2,7 +2,7 @@ import { IconArrow, IconCashier, IconEthereum } from "@/assets/icons";
 import logo from "@/assets/images/logo.svg";
 import { UserInfo } from "@/assets/user-info";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 
 export const Navigation = () => {
   return (

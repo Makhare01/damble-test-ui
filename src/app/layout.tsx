@@ -1,4 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar";
+import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
@@ -37,6 +38,7 @@ export default function RootLayout({
           <main className="flex-1 flex flex-col">
             <Navigation />
             <div className="flex-1 p-[60px]">{children}</div>
+            <Footer />
           </main>
         </SidebarProvider>
       </body>
