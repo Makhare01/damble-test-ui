@@ -80,7 +80,7 @@ export function SidebarItems() {
     <SidebarMenu className="gap-2.5">
       {items.map((item) => (
         <Collapsible key={item.title} className="group/collapsible">
-          <SidebarMenuItem className="bg-background border border-transparent h-[60px] rounded-none px-[19px] py-[22px] hover:border-[#5832E3] group-data-[state=open]/collapsible:border-[#5832E3] transition-colors group-data-[collapsible=icon]:size-9 group-data-[collapsible=icon]:px-0 group-data-[collapsible=icon]:py-0">
+          <SidebarMenuItem className="bg-background border border-transparent h-[60px] rounded-[1px] px-[19px] py-[22px] hover:border-[#5832E3] group-data-[state=open]/collapsible:border-[#5832E3] transition-colors group-data-[collapsible=icon]:size-9 group-data-[collapsible=icon]:px-0 group-data-[collapsible=icon]:py-0">
             <CollapsibleTrigger
               asChild
               disabled={!item.subItems}
@@ -109,7 +109,7 @@ export function SidebarItems() {
             <CollapsibleContent className="p-0 [&>div]:p-0 [&>div>div]:p-0 mt-2 group-data-[collapsible=icon]:hidden border border-gray-600">
               {item.subItems.map((subItem, index) => (
                 <div key={subItem.title}>
-                  <SidebarMenuItem className="bg-background h-[60px] rounded-none px-[19px] py-[22px] border border-transparent hover:border-[#5832E3]">
+                  <SidebarMenuItem className="bg-background h-[60px] rounded-[1px] px-[19px] py-[22px] border border-transparent hover:border-[#5832E3]">
                     <SidebarMenuButton
                       asChild
                       className="h-full hover:bg-transparent active:bg-transparent focus:bg-transparent group-data-[state=open]/collapsible:bg-transparent px-0"
