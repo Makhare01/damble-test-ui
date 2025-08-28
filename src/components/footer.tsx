@@ -34,10 +34,10 @@ const FooterItem = ({
 
 export const Footer = () => {
   return (
-    <footer className="border-t p-[60px] pb-[40px]">
-      <div className="flex items-start justify-between pb-[67px] mb-[85px] border-b">
+    <footer className="border-t py-[60px] md:px-[60px] px-[30px] pb-[40px]">
+      <div className="flex xl:flex-row flex-col items-start justify-between xl:gap-0 gap-8 pb-[67px] mb-[85px] border-b">
         <Image src={logo} alt="logo" />
-        <div className="flex-1 ml-[93px] mr-[113px] grid grid-cols-4 gap-10">
+        <div className="flex-1 2xl:ml-[93px] xl:ml-[60px] ml-0 2xl:mr-[113px] xl:mr-[80px] mr-0 grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 w-full">
           <FooterItem
             title="Support"
             links={["Live Support", "Help center", "Game Responsibly"]}
@@ -80,18 +80,20 @@ export const Footer = () => {
           operations for any and all games of chance and wagering.
         </p>
 
-        <div className="flex items-center justify-between mt-[100px]">
+        <div className="flex sm:flex-row flex-col sm:items-center items-start justify-between sm:gap-0 gap-8 mt-[100px]">
           <p className="text-[13px] text-[#B2B6C5] font-manrope font-medium">
             1 BTC =$118,764.84
           </p>
 
-          <div className="flex items-center gap-[15px]">
+          <div className="flex sm:flex-row flex-col sm:items-center items-start gap-[15px]">
             <p className="mr-[45px] text-[13px] text-[#B2B6C5] font-manrope font-medium">
               © 2025 damble.io | All rights reserved.
             </p>
 
-            <Image src={anjuanFlagImage} alt="anjuan-flag" />
-            <Image src={restrictImage} alt="restrict" />
+            <div className="flex items-center gap-[15px]">
+              <Image src={anjuanFlagImage} alt="anjuan-flag" />
+              <Image src={restrictImage} alt="restrict" />
+            </div>
           </div>
         </div>
       </div>

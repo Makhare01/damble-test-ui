@@ -17,7 +17,7 @@ type Props = {
 export const CustomSelect = ({ placeholder, options }: Props) => {
   return (
     <Select defaultValue={options[0].value}>
-      <SelectTrigger className="w-[204px] pl-10 pr-5">
+      <SelectTrigger className="2xl:w-[204px] w-[180px] pl-10 pr-5">
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
       <SelectContent>
