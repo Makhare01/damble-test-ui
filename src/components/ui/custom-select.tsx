@@ -22,7 +22,11 @@ export const CustomSelect = ({ placeholder, options }: Props) => {
       </SelectTrigger>
       <SelectContent>
         {options.map((option) => (
-          <SelectItem key={option.value} value={option.value}>
+          <SelectItem
+            key={option.value}
+            value={option.value}
+            className="tracking-[0em]"
+          >
             {option.label}
           </SelectItem>
         ))}

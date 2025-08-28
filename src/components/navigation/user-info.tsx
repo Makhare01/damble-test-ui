@@ -8,7 +8,9 @@ export const UserInfo = () => {
       <Image src={userImage} alt="user" width={50} height={50} />
       <div className="flex items-center gap-2">
         <IconUserBadge />
-        <p className="text-base text-white font-extrabold">Username</p>
+        <p className="text-base text-white font-extrabold tracking-[0.09em]">
+          Username
+        </p>
         <IconArrow className="h-4 text-white font-extrabold" />
       </div>
     </div>

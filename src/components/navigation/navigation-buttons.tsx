@@ -11,7 +11,7 @@ export const NavigationButtons = () => {
         className="flex items-center gap-[11px] h-full rounded-l-[1px] py-0 w-1/2"
       >
         <Image src={ethereumImage} alt="ethereum" />
-        <p className="xl:text-[13px] text-[11px] font-extrabold font-manrope">
+        <p className="xl:text-[13px] text-[11px] font-extrabold font-manrope tracking-[0em]">
           $ 0.00
         </p>
         <IconArrow />
@@ -19,7 +19,9 @@ export const NavigationButtons = () => {
 
       <Button className="h-full rounded-r-[1px] border-b-3 border-[#6BB311] w-1/2">
         <IconCashier className="text-text-primary" />
-        <p className="xl:text-xs text-[11px] font-black">Cashier</p>
+        <p className="xl:text-xs text-[11px] font-black tracking-[0.09em]">
+          Cashier
+        </p>
       </Button>
     </div>
   );

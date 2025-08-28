@@ -15,14 +15,16 @@ const FooterItem = ({
 }) => {
   return (
     <div className="w-full">
-      <h2 className="text-xl font-bold text-white mb-[22px]">{title}</h2>
+      <h2 className="text-xl font-bold text-white mb-[22px] tracking-[0em]">
+        {title}
+      </h2>
 
       <div className="flex flex-col gap-2">
         {links.map((link) => (
           <Link
             href={link}
             key={link}
-            className="text-base font-manrope font-semibold text-[#B2B6C5]"
+            className="text-base font-manrope font-semibold text-[#B2B6C5] tracking-[0em]"
           >
             {link}
           </Link>
@@ -70,7 +72,7 @@ export const Footer = () => {
       </div>
 
       <div>
-        <p className="text-base font-medium text-[#B2B6C5] font-manrope">
+        <p className="text-base font-medium text-[#B2B6C5] font-manrope tracking-[0em]">
           Damble is owned and operated by 88bit Limited, Belize company
           registration Number 48974 with its registered address at Sea Urchin
           Street, San Pedro Town, Ambergris Caye, Belize. Damble is licensed and
@@ -81,12 +83,12 @@ export const Footer = () => {
         </p>
 
         <div className="flex sm:flex-row flex-col sm:items-center items-start justify-between sm:gap-0 gap-8 mt-[100px]">
-          <p className="text-[13px] text-[#B2B6C5] font-manrope font-medium">
+          <p className="text-[13px] text-[#B2B6C5] font-manrope font-medium tracking-[0.02em]">
             1 BTC =$118,764.84
           </p>
 
           <div className="flex sm:flex-row flex-col sm:items-center items-start gap-[15px]">
-            <p className="mr-[45px] text-[13px] text-[#B2B6C5] font-manrope font-medium">
+            <p className="mr-[45px] text-[13px] text-[#B2B6C5] font-manrope font-medium tracking-[0em]">
               © 2025 damble.io | All rights reserved.
             </p>
 
