@@ -17,7 +17,7 @@ export const SidebarFooter = () => {
       </div>
 
       <div className="flex items-center justify-center bg-background h-[50px] w-full border">
-        <h2 className="text-[15px] text-white font-extrabold uppercase">
+        <h2 className="text-[15px] text-white font-extrabold uppercase tracking-[0.09em]">
           Get Crypto
         </h2>
       </div>

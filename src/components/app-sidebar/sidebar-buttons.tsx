@@ -12,10 +12,12 @@ export const SidebarButtons = () => {
 
   return (
     <>
-      <Button variant="outline" className="z-50">
+      <Button variant="outline" className="z-50 tracking-[0em]">
         Casino
       </Button>
-      <Button variant="outline">Sports</Button>
+      <Button variant="outline" className="tracking-[0em]">
+        Sports
+      </Button>
     </>
   );
 };

@@ -136,4 +136,8 @@
   *:disabled {
     color: var(--color-disabled-text);
   }
+  /* Global letter spacing for all text elements */
+  * {
+    letter-spacing: 0.11em;
+  }
 }
