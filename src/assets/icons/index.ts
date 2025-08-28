@@ -9,6 +9,7 @@ export { IconGift } from "./gift";
 export { IconHuman } from "./human";
 export { IconMessage } from "./message";
 export { IconSearch } from "./search";
+export * from "./tabs";
 export { IconUserBadge } from "./user-badge";
 export { IconUserPlus } from "./user-plus";
 export { IconUsers } from "./users";
