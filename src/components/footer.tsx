@@ -22,7 +22,7 @@ const FooterItem = ({
       <div className="flex flex-col gap-2">
         {links.map((link) => (
           <Link
-            href={link}
+            href={`#${link}`}
             key={link}
             className="text-base font-manrope font-semibold text-[#B2B6C5] tracking-[0em]"
           >
@@ -72,7 +72,7 @@ export const Footer = () => {
       </div>
 
       <div>
-        <p className="text-base font-medium text-[#B2B6C5] font-manrope tracking-[0em]">
+        <p className="text-base font-medium text-[#B2B6C5] font-manrope tracking-[0em] text-justify">
           Damble is owned and operated by 88bit Limited, Belize company
           registration Number 48974 with its registered address at Sea Urchin
           Street, San Pedro Town, Ambergris Caye, Belize. Damble is licensed and

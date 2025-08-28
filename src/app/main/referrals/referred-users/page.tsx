@@ -1,5 +1,6 @@
 import { CustomTable } from "@/components/custom-table";
 import { ReferralValuesToolbar } from "@/components/referrals/referral-values-toolbar";
+import Link from "next/link";
 
 const ReferredUsersPage = () => {
   return (
@@ -36,8 +37,10 @@ const ReferredUsersPage = () => {
       />
 
       <p className="text-[13px] text-[#B2B6C5] font-manrope font-semibold tracking-[0em] mt-[30px]">
-        If you&apos;re a content creator or a KOL, make sure to check out our
-        <span className="text-[#5832E3]">Affiliate Program!</span>
+        If you&apos;re a content creator or a KOL, make sure to check out our{" "}
+        <Link href="#" className="text-[#5832E3]">
+          Affiliate Program!
+        </Link>
       </p>
     </div>
   );
