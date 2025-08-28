@@ -37,7 +37,7 @@ export default function RootLayout({
           <AppSidebar />
           <main className="flex-1 flex flex-col">
             <Navigation />
-            <div className="flex-1 p-[60px]">{children}</div>
+            <div className="flex-1 md:p-[60px] p-[30px]">{children}</div>
             <Footer />
           </main>
         </SidebarProvider>
