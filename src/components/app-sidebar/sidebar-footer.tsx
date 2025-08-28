@@ -8,7 +8,7 @@ import { UserInfo } from "../navigation/user-info";
 
 export const SidebarFooter = () => {
   return (
-    <ShadCNSidebarFooter className="flex">
+    <ShadCNSidebarFooter className="group-data-[collapsible=icon]:hidden">
       <div className="block xl:hidden">
         <NavigationButtons />
       </div>
