@@ -5,6 +5,7 @@ export { IconBurger } from "./burger";
 export { IconCashier } from "./cashier";
 export { IconCasinoGames } from "./casino-games";
 export { IconCoin } from "./coin";
+export { IconCopy } from "./copy";
 export { IconGift } from "./gift";
 export { IconHuman } from "./human";
 export { IconMessage } from "./message";

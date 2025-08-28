@@ -22,7 +22,7 @@ export const ReferralTabs = () => {
 
   return (
     <Tabs defaultValue={activeTab?.value} className="w-full">
-      <TabsList className="border border-[#262D3C]">
+      <TabsList className="border border-background-tertiary">
         {tabs.map(({ title, value }) => (
           <TabsTrigger
             key={value}
