@@ -47,6 +47,48 @@ const items = [
     title: "Sports",
     url: "#",
     icon: IconBullseyeArrow,
+    subItems: [
+      {
+        title: "Football",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "Basketball",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "Cricket",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "Tennis",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "Ice Hockey",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "Boxing",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "MMA",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+      {
+        title: "All Sports",
+        url: "#",
+        icon: IconBullseyeArrow,
+      },
+    ],
   },
   {
     title: "Providers",
@@ -72,6 +114,23 @@ const items = [
     title: "Sponsorships",
     url: "#",
     icon: IconUsers,
+    subItems: [
+      {
+        title: "Sponsor One",
+        url: "#",
+        icon: IconUsers,
+      },
+      {
+        title: "Sponsor Two",
+        url: "#",
+        icon: IconUsers,
+      },
+      {
+        title: "Sponsor Three",
+        url: "#",
+        icon: IconUsers,
+      },
+    ],
   },
 ];
 
