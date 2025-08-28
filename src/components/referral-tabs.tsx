@@ -21,23 +21,25 @@ export const ReferralTabs = () => {
   const activeTab = tabs.find((tab) => tab.value === pathname);
 
   return (
-    <Tabs defaultValue={activeTab?.value} className="w-full">
-      <TabsList className="border border-background-tertiary">
-        {tabs.map(({ title, value }) => (
-          <TabsTrigger
-            key={value}
-            value={value}
-            className="p-0 text-xs w-[190px]"
-          >
-            <Link
-              href={value}
-              className="flex items-center justify-center px-[26px] w-full h-[60px] flex-1"
+    <div className="w-full overflow-x-auto">
+      <Tabs defaultValue={activeTab?.value} className="w-full min-w-max">
+        <TabsList className="border border-background-tertiary flex-nowrap">
+          {tabs.map(({ title, value }) => (
+            <TabsTrigger
+              key={value}
+              value={value}
+              className="p-0 md:text-xs text-[10px] md:w-[190px] w-[150px] flex-shrink-0"
             >
-              {title}
-            </Link>
-          </TabsTrigger>
-        ))}
-      </TabsList>
-    </Tabs>
+              <Link
+                href={value}
+                className="flex items-center justify-center px-[26px] w-full h-[60px] flex-1"
+              >
+                {title}
+              </Link>
+            </TabsTrigger>
+          ))}
+        </TabsList>
+      </Tabs>
+    </div>
   );
 };

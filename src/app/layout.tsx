@@ -31,13 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${orbitron.variable} ${orbitron.className} ${manrope.variable} antialiased`}
+        className={`${orbitron.variable} ${orbitron.className} ${manrope.variable} antialiased h-screen`}
       >
         <SidebarProvider>
           <AppSidebar />
-          <main className="flex-1 flex flex-col">
+          <main className="flex-1 flex flex-col h-full overflow-hidden">
             <Navigation />
-            <div className="flex-1 md:p-[60px] p-[30px] min-h-[calc(100vh-90px)]">
+            <div className="flex-1 md:p-[60px] p-[30px] overflow-auto">
               {children}
             </div>
             <Footer />

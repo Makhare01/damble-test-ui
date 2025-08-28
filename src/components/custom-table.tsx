@@ -17,18 +17,22 @@ type Props = {
 
 export const CustomTable = ({ header, body, tableRowClassName }: Props) => {
   return (
-    <Table className="table-fixed w-full">
+    <Table className="table-fixed">
       <TableHeader className="bg-background-tertiary h-[60px]">
         <TableRow className="border-none text-white hover:bg-transparent">
           {header.map((cell, index) => (
             <TableHead
               key={cell.toString()}
               className={cn(
-                "px-7 text-white text-sm font-extrabold uppercase w-1/3",
+                "md:px-7 px-2 text-white text-sm font-extrabold uppercase min-w-[120px] md:min-w-[200px] wrap",
                 {
                   "text-left": index === 0,
                 }
               )}
+              style={{
+                minWidth: "230px",
+                width: "230px",
+              }}
             >
               {cell.toString()}
             </TableHead>
@@ -48,11 +52,15 @@ export const CustomTable = ({ header, body, tableRowClassName }: Props) => {
               <TableCell
                 key={cellIndex}
                 className={cn(
-                  "px-7 text-white text-[13px] font-medium font-manrope tracking-[0em] border-none w-1/3",
+                  "md:px-7 px-2 text-white text-[13px] font-medium font-manrope tracking-[0em] border-none min-w-[120px] md:min-w-[200px]",
                   {
                     "text-left": cellIndex === 0,
                   }
                 )}
+                style={{
+                  minWidth: "230px",
+                  width: "230px",
+                }}
               >
                 {cell}
               </TableCell>
